@@ -1,1 +1,1 @@
-# open-appacademy-io
+# open.appacademy.io
