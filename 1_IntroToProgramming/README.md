@@ -1,9 +1,3 @@
-### Numbers
-### Strings
-### Booleans
-### Variables
-### Methods
-### Conditionals
 ### Loops
 ### Arrays
 ### Enumerables & Ranges
