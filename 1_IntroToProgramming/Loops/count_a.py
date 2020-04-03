@@ -1,4 +1,4 @@
-# Write a program that counts the number of "E/e" in a string.
+# Write a program that counts the number of "A/a" in a string.
 
 
 def count_a(word):
