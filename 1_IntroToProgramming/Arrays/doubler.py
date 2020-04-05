@@ -2,7 +2,12 @@
 
 
 def doubler(numbers):
-    pass
+    new_numbers = []
+    for i in range(len(numbers)):
+        old_elem = numbers[i]
+        new_elem = old_elem * 2
+        new_numbers.append(new_elem)
+    return(new_numbers)
 
 
-doubler([1, 2, 3, 4])
+print(doubler([1, 2, 3, 4]))
