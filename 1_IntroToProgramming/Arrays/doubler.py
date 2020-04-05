@@ -5,4 +5,4 @@ def doubler(numbers):
     pass
 
 
-print(doubler[1, 2, 3, 4])
+doubler([1, 2, 3, 4])
