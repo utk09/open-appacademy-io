@@ -10,4 +10,5 @@ def doubler(numbers):
     return(new_numbers)
 
 
-print(doubler([1, 2, 3, 4]))
+print(doubler([1, 2, 3, 4]))  # prints [2,4,6,8]
+print(doubler([2, 4, 6]))  # prints [4, 8, 12]
