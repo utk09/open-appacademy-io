@@ -17,6 +17,15 @@ def abbreviate_sentence(sent):
     return new_sent
 
 
+def abbreviate_word(word):
+    vowels = "aeiou"
+    no_vowels = ""
+    for each_char in word:
+        if not(each_char in vowels):
+            no_vowels += each_char
+    return no_vowels
+
+
 
 print(abbreviate_sentence("follow the yellow brick road")) # => "fllw the yllw brck road"
 
