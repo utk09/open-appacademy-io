@@ -4,7 +4,7 @@ Write a method is_valid_name that takes in a string and returns a boolean indica
 
 # A name is valid is if satisfies all of the following:
 # - contains at least a first name and last name, separated by spaces
-# - each part of the name should be capitalized
+# - first part/letter of the name should be capitalized
 #
 # Hint: use str.upcase or str.downcase
 # "a".upcase # => "A"
