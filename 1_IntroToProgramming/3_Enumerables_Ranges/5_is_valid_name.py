@@ -14,8 +14,9 @@ def is_valid_name(string):
         return False
     else:
         for word in old_name:
-            final_ans = is_capitalized(word)
-    return final_ans
+            if not is_capitalized(word):
+                return False
+    return True
 
 
 def is_capitalized(word):
