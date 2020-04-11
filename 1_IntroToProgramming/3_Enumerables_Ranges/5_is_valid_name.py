@@ -6,15 +6,22 @@ Write a method is_valid_name that takes in a string and returns a boolean indica
 # - contains at least a first name and last name, separated by spaces
 # - first part of the name should be capitalized
 #
-# Hint: use str.upcase or str.downcase
-# "a".upcase # => "A"
 
 
 def is_valid_name(string):
     old_name = string.split(" ")
-    name = 0
-    x = []
     if len(old_name) < 2:
+        return False
+    else:
+        for word in old_name:
+            final_ans = is_capitalized(word)
+    return final_ans
+
+
+def is_capitalized(word):
+    if word == word.capitalize():
+        return True
+    else:
         return False
 
 
