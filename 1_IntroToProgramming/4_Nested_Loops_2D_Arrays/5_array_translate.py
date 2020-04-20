@@ -4,7 +4,12 @@ Write a method array_translate that takes in an array whose elements alternate b
 
 
 def array_translate(array):
-    pass
+    pairs = ""
+    for i in range(len(array)):
+        if i % 2 == 0:
+            x = array[i] * array[i + 1]
+            pairs = pairs + x
+    return pairs
 
 
 # => "CatCatDogDogDogMouse"
