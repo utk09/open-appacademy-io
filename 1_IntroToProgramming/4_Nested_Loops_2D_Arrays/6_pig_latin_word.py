@@ -13,8 +13,13 @@ def pig_latin_word(word):
     if word[0] in vowels:
         new_word = word + "yay"
         return new_word
-    else:
-        pass
+
+    for each_index, each_char in enumerate(word):
+        if each_char in vowels:
+            before_vowel = word[0:each_index]
+            after_vowel = word[each_index:]
+            new_word = after_vowel + before_vowel + "ay"
+            return new_word
 
 
 print(pig_latin_word("apple"))   # => "appleyay"
