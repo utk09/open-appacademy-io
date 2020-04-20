@@ -8,7 +8,13 @@ Write a method pig_latin_word that takes in a word string and translates the wor
 
 
 def pig_latin_word(word):
-    pass
+    new_word = ""
+    vowels = "aeiou"
+    if word[0] in vowels:
+        new_word = word + "yay"
+        return new_word
+    else:
+        pass
 
 
 print(pig_latin_word("apple"))   # => "appleyay"
