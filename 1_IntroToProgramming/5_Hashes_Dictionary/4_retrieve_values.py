@@ -4,7 +4,11 @@ Write a method retrieve_values that takes in two hashes and a key. The method sh
 
 
 def retrieve_values(hash1, hash2, key):
-    pass
+    final_list = []
+    if key in dog1 and dog2:
+        final_list.append(dog1[key])
+        final_list.append(dog2[key])
+    return final_list
 
 
 dog1 = {"name": "Fido", "color": "brown"}
