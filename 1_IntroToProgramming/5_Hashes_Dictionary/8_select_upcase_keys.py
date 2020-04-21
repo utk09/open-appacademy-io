@@ -1,10 +1,14 @@
 """
-Write a method select_upcase_keys that takes in a hash and returns a new hash containing key-value pairs of the original hash that had uppercase keys. You can assume that the keys will always be strings.
+Write a method select_upcase_keys that takes in a dictionary and returns a new dictionary containing key-value pairs of the original dictionary that had uppercase keys. You can assume that the keys will always be strings.
 """
 
 
-def select_upcase_keys(hash):
-    pass
+def select_upcase_keys(hash_in):
+    final_dict = {}
+    for keys in hash_in.keys():
+        if keys == keys.upper():
+            final_dict[keys] = hash_in[keys]
+    return final_dict
 
 
 # => {"MODEL"=>"S", "SEATS"=>4}
