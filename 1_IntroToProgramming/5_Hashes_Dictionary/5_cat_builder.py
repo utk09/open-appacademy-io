@@ -11,8 +11,8 @@ def cat_builder(name_str, color_str, age_num):
     return final_dict
 
 
-# => {"name":"Whiskers", "color":"orange", "age":3}
+# => {"name": "Whiskers", "color": "orange", "age": 3}
 print(cat_builder("Whiskers", "orange", 3))
 
-# => {"name":"Salem", "color":"black", "age":100}
+# => {"name": "Salem", "color": "black", "age": 100}
 print(cat_builder("Salem", "black", 100))
