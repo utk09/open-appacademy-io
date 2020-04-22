@@ -4,8 +4,8 @@ Write a method hash_to_pairs that takes in a dictionary and returns a 2D array r
 
 
 def hash_to_pairs(hash_in):
-    pass
-
+    data_pairs = [[key, value] for key, value in hash_in.items()]
+    return data_pairs
 
 # => [["name", "skateboard"], ["wheels", 4], ["weight", "7.5 lbs"]]
 print(hash_to_pairs({"name": "skateboard", "wheels": 4, "weight": "7.5 lbs"}))
