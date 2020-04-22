@@ -4,7 +4,13 @@ Write a method whisper_words that takes in an array of words and returns a new a
 
 
 def whisper_words(words):
-    pass
+    new_sent_2 = []
+
+    for each_word in words:
+        each_word = each_word.lower() + "..."
+        new_sent_2.append(each_word)
+
+    return new_sent_2
 
 
 # => ["keep...", "the...", "noise...", "down..."]
