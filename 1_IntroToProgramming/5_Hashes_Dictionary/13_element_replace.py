@@ -4,8 +4,16 @@ Write a method element_replace that takes in an array and a dictionary. The meth
 
 
 def element_replace(arr, hash_in):
-    pass
+    final_arr = []
+    for key in hash_in.keys():
+        if key in arr:
+            final_arr.append(hash_in[key])
 
+    for each_element in arr:
+        if each_element not in hash_in.keys():
+            final_arr.append(each_element)
+
+    return final_arr
 
 arr1 = ["LeBron James", "Lionel Messi", "Serena Williams"]
 hash1 = {"Serena Williams": "tennis", "LeBron James": "basketball"}
