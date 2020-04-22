@@ -17,6 +17,8 @@ def rotate_array(arr, num):
 
 # => [ "Matthias", "Matt", "Danny", "Mashu" ]
 print(rotate_array(["Matt", "Danny", "Mashu", "Matthias"], 1))
+
 print(rotate_array(["a", "b", "c", "d"], 2))  # => [ "c", "d", "a", "b" ]
+
 # => ["u", "v", "w", "s", "t"]
 print(rotate_array(["s", "t", "u", "v", "w"], 3))
