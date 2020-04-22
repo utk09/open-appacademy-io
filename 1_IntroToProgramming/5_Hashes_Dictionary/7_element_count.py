@@ -4,7 +4,6 @@ Write a method element_count that takes in an array and returns a dictionary rep
 
 
 def element_count(arr):
-    final_dict = {}
     final_dict = {each_element: arr.count(
         each_element) for each_element in arr}
     return final_dict
