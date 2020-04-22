@@ -2,8 +2,6 @@
 Write a method two_d_Sum that takes in a two dimensional array and returns the sum of all elements in the array.
 """
 
-from itertools import combinations
-
 
 def two_d_sum(arr):
     sum_all = 0
