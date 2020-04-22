@@ -7,7 +7,7 @@ def map_by_name(arr):
     map_list = []
     for each_dict in range(len(arr)):
         map_dict = arr[each_dict]
-        
+
         for key, value in map_dict.items():
             if key == "name":
                 map_list.append(map_dict["name"])
