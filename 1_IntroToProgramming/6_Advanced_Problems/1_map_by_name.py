@@ -4,7 +4,15 @@ Write a method map_by_name that takes in an array of dictionary and returns a ne
 
 
 def map_by_name(arr):
-    pass
+    map_list = []
+    for each_dict in range(len(arr)):
+        map_dict = arr[each_dict]
+        
+        for key, value in map_dict.items():
+            if key == "name":
+                map_list.append(map_dict["name"])
+
+    return map_list
 
 
 pets = [
@@ -15,7 +23,6 @@ pets = [
     {"type": "cat", "name": "Buffy"}
 ]
 print(map_by_name(pets))  # => ["Rolo", "Sunny", "Saki", "Finn", "Buffy"]
-
 
 countries = [
     {"name": "Japan", "continent": "Asia"},
