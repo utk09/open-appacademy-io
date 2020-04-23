@@ -27,8 +27,15 @@ max() | round() | delattr() | hash() | memoryview() | set()
 """
 
 
+# select() not available in python. So using traditional method instead
+
 def o_words(sentence):
-    pass
+    final_list = []
+    split_sent = sentence.split(" ")
+    for each_word in split_sent:
+        if each_word.__contains__("o"):
+            final_list.append(each_word)
+    return final_list
 
 
 print(o_words("How did you do that?"))  # => ["How", "you", "do"]
