@@ -4,7 +4,15 @@ Write a method last_index that takes in a string and a character. The method sho
 
 
 def last_index(string, character):
-    pass
+    char_list = []
+    for each_word in string:
+        char_list.append(each_word)
+
+    index_list = []
+    for letter_index in range(len(char_list)):
+        if char_list[letter_index] == character:
+            index_list.append(letter_index)
+    return index_list[-1]
 
 
 print(last_index("abca", "a"))  # => 3
