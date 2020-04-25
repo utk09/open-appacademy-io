@@ -4,7 +4,21 @@ A number's summation is the sum of all positive numbers less than or equal to th
 
 
 def summation_sequence(start, length):
-    pass
+    final_list = [start]
+    val = start
+    i = 0
+    while i < length - 1:
+        x = total_sum(val)
+        final_list.append(x)
+        val = x
+        i += 1
+    return final_list
+
+
+def total_sum(num):
+    for i in range(1, num):
+        num = num + i
+    return num
 
 
 print(summation_sequence(3, 4))  # => [3, 6, 21, 231]
