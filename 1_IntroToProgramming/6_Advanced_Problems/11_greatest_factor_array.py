@@ -4,7 +4,21 @@ Write a method greatest_factor_array that takes in an array of numbers and retur
 
 
 def greatest_factor_array(arr):
-    pass
+    final_list = []
+    for each_num in arr:
+        if each_num % 2 == 0:
+            final_list.append(even_factors(each_num))
+        else:
+            final_list.append(each_num)
+    return final_list
+
+
+def even_factors(num):
+    value_list = []
+    for each_val in range(1, num):
+        if num % each_val == 0:
+            value_list.append(each_val)
+    return max(value_list)
 
 
 print(greatest_factor_array([16, 7, 9, 14]))  # => [8, 7, 9, 7]
