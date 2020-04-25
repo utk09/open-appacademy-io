@@ -4,7 +4,23 @@ The fibonacci sequence is a sequence of numbers whose first and second elements 
 
 
 def fibonacci(length):
-    pass
+    final_list = []
+    x = 1
+    if length == 0:
+        return final_list
+
+    elif length == 1:
+        final_list.append(1)
+        return final_list
+
+    else:
+        final_list.append(1)
+        final_list.append(1)
+        for val in range(1, length - 1):
+            x = x + final_list[val]
+            final_list.append(x)
+            x = final_list[val]
+        return final_list
 
 
 print(fibonacci(0))  # => []
@@ -14,3 +30,5 @@ print(fibonacci(1))  # => [1]
 print(fibonacci(6))  # => [1, 1, 2, 3, 5, 8]
 
 print(fibonacci(8))  # => [1, 1, 2, 3, 5, 8, 13, 21]
+
+print(fibonacci(12))
