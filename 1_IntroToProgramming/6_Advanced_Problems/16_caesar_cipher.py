@@ -6,8 +6,16 @@ Write a method caesar_cipher that takes in a string and a number. The method sho
 # alphabet = "abcdefghijklmnopqrstuvwxyz"
 
 
+# chr(97) = a
+# ord('a') = 97
+
 def caesar_cipher(string, num):
-    pass
+    string = string.lower()
+    new_str = ""
+    for character in range(len(string)):
+        char_new = string[character]
+        new_str = new_str + chr((ord(char_new) + num - 97) % 26 + 97)
+    return new_str
 
 
 print(caesar_cipher("apple", 1))  # => "bqqmf"
