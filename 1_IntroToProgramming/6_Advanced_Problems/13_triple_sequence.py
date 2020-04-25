@@ -4,7 +4,19 @@ Write a method triple_sequence that takes in two numbers, start and length. The 
 
 
 def triple_sequence(start, length):
-    pass
+    final_list = [start]
+    val = start
+    i = 0
+    while i < length-1:
+        x = mul_previous(val)
+        final_list.append(x)
+        val = x
+        i += 1
+    return final_list
+
+
+def mul_previous(num):
+    return num * 3
 
 
 print(triple_sequence(2, 4))  # => [2, 6, 18, 54]
