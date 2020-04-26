@@ -1,5 +1,5 @@
 """
-Write a method get_double_age that takes in a dictionaary and returns twice the "age" value of the dictionary.
+Write a method get_double_age that takes in a dictionary and returns twice the "age" value of the dictionary.
 """
 
 
