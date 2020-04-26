@@ -9,7 +9,23 @@ Write a method pyramid_sum that takes in an array of numbers representing the ba
 
 
 def pyramid_sum(base):
-    pass
+    final_arr = []
+    final_arr.append(base)
+    i = 0
+    while i < len(base) - 1:
+        x = adjacent_sum(base)
+        final_arr.append(x)
+        base = x
+    final_arr = final_arr[::-1]
+
+    return final_arr
+
+
+def adjacent_sum(arr):
+    new_arr = []
+    for each_term in range(len(arr) - 1):
+        new_arr.append(arr[each_term] + arr[each_term + 1])
+    return new_arr
 
 
 print(pyramid_sum([1, 4, 6]))  # => [[15], [5, 10], [1, 4, 6]]
