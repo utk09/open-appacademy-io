@@ -4,7 +4,18 @@ Write a method same_char_collapse that takes in a string and returns a collapsed
 
 
 def same_char_collapse(string):
-    pass
+    collapsable = True
+    while collapsable:
+        collapsable = False
+        split = list(string)
+        for i in range(0, len(split) - 1):
+            if split[i] == split[i+1]:
+                split[i] = ""
+                split[i+1] = ""
+                collapsable = True
+                break
+        string = "".join(split)
+    return string
 
 
 print(same_char_collapse("zzzxaaxy"))  # => "zy"
