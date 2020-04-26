@@ -3,7 +3,7 @@
 This repository is a Work-In-Progress(WIP).
 It contains Pythonic code for all the Ruby Examples of Intro To Programming from http://open.appacademy.io/
 
-Codes from other folders will be added as I move forward through the course.
+Codes from other chapters will be added as I move forward in the course.
 
 Let me warn you, all the code is not really modular code. I have focussed on solving the problem rather than worrying about the [Big O](https://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/).
 
