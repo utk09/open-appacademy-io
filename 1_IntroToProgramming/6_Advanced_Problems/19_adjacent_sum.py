@@ -4,7 +4,10 @@ Write a method adjacent_sum that takes in an array of numbers and returns a new 
 
 
 def adjacent_sum(arr):
-    pass
+    new_arr = []
+    for each_term in range(len(arr) - 1):
+        new_arr.append(arr[each_term] + arr[each_term + 1])
+    return new_arr
 
 
 # => [10, 9, 13], because [ 3+7, 7+2, 2+11 ]
