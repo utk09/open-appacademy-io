@@ -4,7 +4,13 @@ Write a method all_else_equal that takes in an array of numbers. The method shou
 
 
 def all_else_equal(arr):
-    pass
+    total = 0
+    for ele in arr:
+        total = total + ele
+    if arr.__contains__(int(total / 2)):
+        return int(total / 2)
+    else:
+        return None
 
 
 # => 10, because the sum of all elements is 20
