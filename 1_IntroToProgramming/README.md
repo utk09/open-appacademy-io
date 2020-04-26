@@ -1,6 +1,6 @@
 Code for "Intro to Programming" & "Full Stack Online - Intro to Programming"
 
-### [Loops](../blob/master/1_IntroToProgramming/1_Loops)
+### [Loops](../1_IntroToProgramming/1_Loops)
 
 ### Arrays
 
