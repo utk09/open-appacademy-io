@@ -4,7 +4,25 @@ Write a method anagrams_or_not that takes in two words and returns a boolean ind
 
 
 def anagrams_or_not(word1, word2):
-    pass
+    arr1 = []
+    arr2 = []
+    for ele1 in word1:
+        arr1.append(ele1)
+
+    x = arr1
+
+    for ele2 in word2:
+        arr2.append(ele2)
+
+    y = arr2
+
+    x.sort()
+    y.sort()
+
+    if x == y:
+        return True
+    else:
+        return False
 
 
 print(anagrams_or_not("cat", "act"))  # => true
