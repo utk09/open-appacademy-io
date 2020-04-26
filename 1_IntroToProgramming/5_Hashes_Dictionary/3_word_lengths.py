@@ -1,5 +1,5 @@
 """
-Write a method word_lengths that takes in a sentence string and returns a dictionary where every key is a word of the sentence, and its' corresponding value is the length of that word.
+Write a method word_lengths that takes in a sentence string and returns a dictionary where every key is a word of the sentence, and its corresponding value is the length of that word.
 """
 
 
