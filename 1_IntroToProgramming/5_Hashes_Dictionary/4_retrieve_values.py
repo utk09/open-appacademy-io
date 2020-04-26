@@ -5,9 +5,9 @@ Write a method retrieve_values that takes in two dictionaries and a key. The met
 
 def retrieve_values(hash1, hash2, key):
     final_list = []
-    if key in dog1 and dog2:
-        final_list.append(dog1[key])
-        final_list.append(dog2[key])
+    if key in hash1 and hash2:
+        final_list.append(hash1[key])
+        final_list.append(hash2[key])
     return final_list
 
 
