@@ -1,7 +1,7 @@
 # open-appacademy-io
 
 This repository is a Work-In-Progress(WIP).
-It contains Pythonic code for all the Ruby Examples of Intro To Programming from http://open.appacademy.io/
+It contains Pythonic code for all the Ruby Examples of "Intro To Programming" from http://open.appacademy.io/
 
 Codes from other chapters will be added as I move forward in the course.
 
