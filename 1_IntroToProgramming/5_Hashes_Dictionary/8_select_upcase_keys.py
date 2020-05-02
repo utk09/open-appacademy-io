@@ -11,10 +11,10 @@ def select_upcase_keys(hash_in):
     return final_dict
 
 
-# => {"MODEL"=>"S", "SEATS"=>4}
+# => {"MODEL": "S", "SEATS": 4}
 print(select_upcase_keys(
     {"make": "Tesla", "MODEL": "S", "Year": 2018, "SEATS": 4}))
 
-# => {"DATE"=>"July 4th"}
+# => {"DATE": "July 4th"}
 print(select_upcase_keys(
     {"DATE": "July 4th", "holiday": "Independence Day", "type": "Federal"}))
